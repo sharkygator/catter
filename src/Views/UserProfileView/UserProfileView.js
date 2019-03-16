@@ -1,6 +1,7 @@
 import React from 'react';
 import AppContext from '../../context';
 import Header from '../../components/Header/Header';
+import ProfileHeader from '../../components/ProfileComponents/ProfileHeader';
 
 const UserProfileView = ()=>{
 
@@ -9,7 +10,7 @@ const UserProfileView = ()=>{
             {(context)=>(
                 <>
                 <Header />
-                <h1>dupa</h1>
+                <ProfileHeader />
                 </>
             )}
         </AppContext.Consumer>
