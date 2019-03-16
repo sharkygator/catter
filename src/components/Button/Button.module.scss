@@ -1,0 +1,26 @@
+$mainColor: #F58EA8;
+
+.button{
+
+    color: white;
+    background-color: $mainColor;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 100px;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    cursor: pointer;
+    height: 40px;
+
+    &Secondary{
+        @extend .button;
+        color: $mainColor;
+        background-color: white;
+
+    }
+    // &:focus{
+        
+    // }
+}

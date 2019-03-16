@@ -1,0 +1,33 @@
+$mainColor: #F58EA8;
+.wrapper{
+    list-style: none;
+    padding: 0;
+}
+.navItem{
+    display: inline-block;
+    margin-right: 20px;
+    
+    &Link{
+        color:#657786;
+        text-decoration: none;
+        font-weight: 700;
+
+        &:hover{
+            @extend .navItemLinkActive;
+        }
+        &Active{
+            color: $mainColor;
+
+            &::after{
+                content: "";
+                background-color: $mainColor;
+                display: block;
+                width: 100%;
+                height: 2px;
+                position: relative;
+                bottom: -20px;
+                
+            }
+        }
+    }
+}

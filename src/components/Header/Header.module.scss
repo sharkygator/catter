@@ -1,0 +1,18 @@
+.wrapper{
+    display: flex;
+    list-style: none;
+    background-color: white;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px 20vh;
+    box-shadow: 3px 0 10px gray;
+}
+.elementWrapper{
+    
+    display: flex;
+    align-items: center;
+
+    &>*{
+        margin-left: 25px;
+    }
+}
